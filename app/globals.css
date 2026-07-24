@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-paper text-ink antialiased; }
+
+.card { @apply bg-white rounded-2xl border border-sand shadow-sm; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-navy text-paper px-4 py-2.5 text-sm font-semibold hover:bg-navy2 transition disabled:opacity-50; }
+.btn-terra { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-terra text-white px-4 py-2.5 text-sm font-semibold hover:opacity-90 transition disabled:opacity-50; }
+.btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-sand bg-white px-4 py-2.5 text-sm font-semibold hover:bg-sand/50 transition; }
+.input { @apply w-full rounded-xl border border-sand bg-white px-3.5 py-2.5 text-sm outline-none focus:border-navy/40 focus:ring-2 focus:ring-navy/10; }
+.lbl { @apply block text-xs font-bold uppercase tracking-wider text-ink/50 mb-1.5; }
+.h1 { @apply text-2xl font-extrabold tracking-tight; }
+
+html { font-family: 'Manrope', 'Inter', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
